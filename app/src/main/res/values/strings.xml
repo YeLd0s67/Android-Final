@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Project</string>
+    <string name="login">Login</string>
+    <string name="name">name</string>
+    <string name="surname">surname</string>
+    <string name="email">email</string>
+    <string name="pwd">password</string>
+    <string name="log">Log In</string>
+    <string name="nr">Not registered?</string>
+    <string name="create">Create an account</string>
+    <string name="register">Register</string>
+    <string name="phone">phone</string>
+    <string name="user">Search…</string>
+    <string-array name="roles">
+        <item>user</item>
+        <item>admin</item>
+        <item>manager</item>
+    </string-array>
+</resources>

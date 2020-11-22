@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:textColor="#FF0000"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="27dp"
+        android:text="@string/login"
+        android:textSize="36sp" />
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/email"
+        android:layout_below="@+id/welcome"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textSize="24sp"
+        android:autofillHints=""
+        android:inputType="textEmailAddress" />
+    <LinearLayout
+        android:id="@+id/linearL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/email">
+        <EditText
+            android:id="@+id/pwd"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/pwd"
+            android:gravity="center_horizontal"
+            android:textSize="24sp"
+            android:autofillHints=""
+            android:inputType="textPassword" />
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="#FF0000"
+        android:layout_marginTop="20dp"
+        android:onClick="onClickLog"
+        android:layout_below="@+id/linearL"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFFFF"
+        android:text="@string/log" />
+
+    <TextView
+        android:id="@+id/nr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/nr" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="Register"
+        android:textColor="#FF0000"
+        android:layout_below="@+id/btn"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="95dp"
+        android:layout_toEndOf="@id/nr"
+        android:text="@string/create" />
+
+
+</RelativeLayout>
